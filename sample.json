@@ -1,0 +1,60 @@
+{
+    "status": "success",
+    "data": {
+        "schedule": {
+            "_id": "ad98090sdf0909asdf",
+            "name": "Normal School Days",
+            "playbacks": [
+                {
+                    "off_days": [
+                        0,
+                        2,
+                        3
+                    ],
+                    "period": 4,
+                    "time": "09:30"
+                },
+                {
+                    "off_days": [
+                        6
+                    ],
+                    "period": 1,
+                    "time": "09:45"
+                },
+                {
+                    "off_days": [
+                        6
+                    ],
+                    "period": 2,
+                    "time": "10:00"
+                },
+                {
+                    "off_days": [
+                        6
+                    ],
+                    "period": 5,
+                    "time": "10:45"
+                },
+                {
+                    "off_days": [
+                        6
+                    ],
+                    "period": 6,
+                    "time": "11:30"
+                },
+                {
+                    "off_days": [
+                        6
+                    ],
+                    "period": 10,
+                    "time": "12:15"
+                }
+            ]
+        },
+        "gaps": {
+            "long": 600,
+            "short": 200,
+            "ring": 700
+        }
+    }
+}

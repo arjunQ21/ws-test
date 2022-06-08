@@ -1,6 +1,8 @@
 var express = require('express')
 const { WebSocketServer } = require('ws')
 var app = express()
+const fs = require("fs") ;
+const path = require('path');
 
 app.get('/', function (req, res) {
     res.send(`
@@ -16,6 +18,11 @@ app.get('/', function (req, res) {
     </script>
     
     `);
+})
+
+app.get("/currentSchedule", function(req, res){
+    res.header("Content-Type", "application/json") ;
+    res.send(fs.readFileSync(__dirname + path.sep + "sample.json"))
 })
 
 const port = process.env.PORT || 3000
